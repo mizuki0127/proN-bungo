@@ -1,0 +1,43 @@
+h1 {
+    font-size: 100px;
+    margin-top: 100px;
+    margin-left: 120px;
+    font-family: 'Shippori Mincho B1', serif;
+    color: #696969;
+}
+
+.nowSearch {
+    font-size: 20px;
+    font-family: 'Shippori Mincho B1', serif;
+    color: #696969;
+    text-align: center;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.icon li {
+    margin-top: 190px;
+    margin-bottom: 15px;
+}
+.icon li:nth-child(1) {
+    margin-right: 20px;
+}
+.icon li:nth-child(2) {
+    margin-right: 10px;
+}
+.icon li:nth-child(3) {
+    margin-left: 10px;
+}
+.icon li:nth-child(4) {
+    margin-left: 20px;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    color: #696969;
+}

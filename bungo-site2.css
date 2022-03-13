@@ -1,0 +1,38 @@
+/* スライダーのためのcss */
+.slider {
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+}
+
+/* 背景画像設定 */
+.slider-item01{
+    background: url(file:///Users/kobayashimizutsuki/Downloads/kyoto-Cherry_Tunnel-m/kyoto-Cherry_Tunnel-m.jpg);
+}
+.slider-item02{
+    background: url(file:///Users/kobayashimizutsuki/Documents/%E3%83%95%E3%82%9A%E3%83%ADN4Q/%E7%94%BB%E5%83%8F%E7%B4%A0%E6%9D%90/nagano-Three-storied_Pagoda,_Shinkaisansha-jinja_Shrine-m/nagano-Three-storied_Pagoda,_Shinkaisansha-jinja_Shrine-m.jpg);
+}
+.slider-item03{
+    background: url(file:///Users/kobayashimizutsuki/Downloads/gunma-Rice_Terrace,_Sanazawanomori-m/gunma-Rice_Terrace,_Sanazawanomori-m.jpg);
+}
+
+.slider-item{
+    width: 100%;/*各スライダー全体の横幅を画面の高さいっぱい（100%）にする*/
+    height:100vh;/*各スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
+    background-repeat: no-repeat;/*背景画像をリピートしない*/
+    background-position: center;/*背景画像の位置を中央に*/
+    background-size: cover;/*背景画像が.slider-item全体を覆い表示*/
+}
+
+ul{
+    margin: 0px;
+    padding: 0%;
+    width: 100%;
+    min-height: 100%;
+    background-size: cover;
+    list-style:none;
+}
+
+body{
+    margin: 0px;
+}

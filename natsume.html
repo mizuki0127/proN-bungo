@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文豪は旅をする(仮)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
+</head>
+<script>
+    function click_book() {
+        if (document.all.booklist.style.display === "none") {
+            document.all.booklist.style.display = "block"
+        } else {
+            document.all.booklist.style.display = "none"
+        }
+    }
+    function click_spot() {
+        if (document.all.spotlist.style.display === "none") {
+            document.all.spotlist.style.display = "block"
+        } else {
+            document.all.spotlist.style.display = "none"
+        }
+    }
+</script>
+<body>
+    <img src="file:///Users/kobayashimizutsuki/Documents/%E3%83%95%E3%82%9A%E3%83%ADN4Q/%E6%96%87%E8%B1%AA%E5%86%99%E7%9C%9F/%E5%A4%8F%E7%9B%AE%E6%BC%B1%E7%9F%B3.jpg" alt="太宰治">
+    <p><font size="5">夏目漱石</font> SousekiNatsume</p>
+    <p>(1867〜1916)</p>
+    <div>
+        日本文学の巨頭の一人。
+        余裕派と呼ばれ、余裕のある第三者目線でゆったりとした作風が特徴的。
+    </div>
+    <input type="button" value="掲載作品" onclick="click_book()">
+    <div id="booklist">
+        <a href="wagahai.html"><img src="吾輩は猫である.jpg" alt="吾輩は猫である"></a>
+    </div>
+    <input type="button" value="ゆかりの地" onclick="click_spot()">
+    <div id="spotlist">
+        <a href="kikuya.html"><img src="菊屋.png" alt="湯回廊菊屋"></a>
+        <a href="dango.html"><img src="羽二重.png" alt="羽二重団子"></a>
+        <a href="sanbo.html"><img src="山房記念館.png" alt="漱石山房記念館"></a>
+        <a href="syoeitei.html"><img src="松榮亭.png" alt="松榮亭"></a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文豪は旅をする(仮)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
+</head>
+<script>
+    function click_book() {
+        if (document.all.booklist.style.display === "none") {
+            document.all.booklist.style.display = "block"
+        } else {
+            document.all.booklist.style.display = "none"
+        }
+    }
+    function click_spot() {
+        if (document.all.spotlist.style.display === "none") {
+            document.all.spotlist.style.display = "block"
+        } else {
+            document.all.spotlist.style.display = "none"
+        }
+    }
+</script>
+<body>
+    <img src="file:///Users/kobayashimizutsuki/Documents/%E3%83%95%E3%82%9A%E3%83%ADN4Q/%E6%96%87%E8%B1%AA%E5%86%99%E7%9C%9F/%E5%AE%AE%E6%B2%A2%E8%B3%A2%E6%B2%BB.jpg" alt="宮沢賢治">
+    <p><font size="5">宮沢賢治</font> KenjiMiyazawa</p>
+    <p>(1896〜1933)</p>
+    <div>
+        童話が有名で、短編が多い。ふるさとの自然を思い出すような描写や独特なオノマトペが特徴的。
+    </div>
+    <input type="button" value="掲載作品" onclick="click_book()">
+    <div id="booklist"></div>
+    <input type="button" value="ゆかりの地" onclick="click_spot()">
+    <div id="spotlist">
+        <a href="dowamura.html"><img src="童話村.png" alt="童話村"></a>
+    </div>
+</body>
+</html>

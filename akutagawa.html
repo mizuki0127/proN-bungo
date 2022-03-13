@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文豪は旅をする(仮)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
+</head>
+<script>
+    function click_book() {
+        if (document.all.booklist.style.display === "none") {
+            document.all.booklist.style.display = "block"
+        } else {
+            document.all.booklist.style.display = "none"
+        }
+    }
+    function click_spot() {
+        if (document.all.spotlist.style.display === "none") {
+            document.all.spotlist.style.display = "block"
+        } else {
+            document.all.spotlist.style.display = "none"
+        }
+    }
+</script>
+<body>
+    <img src="file:///Users/kobayashimizutsuki/Documents/%E3%83%95%E3%82%9A%E3%83%ADN4Q/%E6%96%87%E8%B1%AA%E5%86%99%E7%9C%9F/%E8%8A%A5%E6%9F%84%E9%BE%8D%E4%B9%8B%E4%BB%8B.jpg" alt="芥川龍之介">
+    <p><font size="5">芥川龍之介</font> RyunosukeAkutagawa</p>
+    <p>(1892〜1927)</p>
+    <div>
+        『今昔物語集』『宇治拾遺物語』などのエピソードを現代的に翻案した作品が注目されている。人間の苦悩や欲望などの醜い部分を克明に描く作風が特徴的。
+    </div>
+    <input type="button" value="掲載作品" onclick="click_book()">
+    <div id="booklist">
+        <a href="honsyo.html"><img src="本所両国.jpg" alt="本所両国"></a>
+    </div>
+    <input type="button" value="ゆかりの地" onclick="click_spot()">
+    <div id="spotlist">
+    <a href="arai.html"><img src="新井旅館.png" alt="新井旅館"></a>
+    <a href="kamakura.html"><img src="ホテルニューカマクラ.png" alt="ホテルニューカマクラ"></a>
+    <a href="asanoya.html"><img src="浅野屋.png" alt="浅野屋"></a>
+    <a href="tyomeiji.html"><img src="長命寺.png" alt="長命寺櫻もち"></a>
+    <a href="ryogoku.html"><img src="両国橋.png" alt="両国橋"></a>
+    <a href="hunabasiya.html"><img src="船橋屋.png" alt="船橋屋"></a>
+    </div>
+</body>
+</html>
